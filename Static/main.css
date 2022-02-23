@@ -1,0 +1,80 @@
+html{
+  height : 100%;
+}
+body{
+  margin : 0;
+  padding : 0;
+  
+  background: linear-gradient(#141e30 , #243b55);
+}
+.login{
+  position: absolute;
+  top: 30%;
+  left : 50%;
+  font-size: 30px;
+  padding: 10px;
+  transform: translate(-50%, -50%);
+  background: transparent;
+
+  border-radius: 10px;
+}
+.login h1{
+  text-align: center;
+  color: white;
+  padding: 10px;
+  margin : 0 0 30px;
+}
+.login .user-box{
+  position: relative;
+}
+.login .user-box input{
+  width: 100px;
+  padding : 10px 0;
+  font-size : 16px;
+  color : #ffffff;
+  margin-bottom: 30px;
+  border : none;
+  border-bottom: 1px solid #ffffff;
+  outline: none;
+  background: transparent;
+}
+.login .user-box label{
+  position: absolute;
+  top : 0;
+  left : 0;
+  padding: 10px 0;
+  font-size: 18px;
+  color : #ffffff;
+  pointer-events: none;
+  transition: .5s;
+}
+.login .user-box input:focus ~ label,
+.login .user-box input:valid ~ label{
+  top : -20px;
+  left : 00px;
+  color : #03e9f4;
+  font-size : 12px;
+}
+.login form a{
+  position : relative;
+  display: inline-block;
+  padding : 10px 20px;
+  color : #03e9f4;
+  font-size: 16px;
+  text-decoration : none;
+  text-transform: uppercase;
+  overflow:hidden;
+  transition: .5s;
+  margin-top: 40px;
+  letter-spacing: 4px;
+}
+.login a:hover{
+  background: #03e9f4;
+  color : #fff;
+  border-radius: 5px;
+  box-shadow: 5px;
+  box-shadow: 0 0 5px #03e9f4,
+              0 0 25px #03e9f4,
+              0 0 50px #03e9f4,
+              0 0 100px #03e9f4;
+}

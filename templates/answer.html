@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{{url_for('static' , filename = 'table.css')}}"/>
+    <title>Results</title>
+  </head>
+  <body>
+    <div class="filter">
+      <h1>Recommendation :</h1>
+      <p>Showing Results for : {{search_name}}</p>
+    </div>
+    <table>
+      <tr>
+        <th>No.</th>
+        <th>Anime Name</th>
+        <th>ratings</th>
+      </tr>
+      <tbody>
+        <tr>
+          <td>1.</td>
+          <td>{{anime_name[0]}}</td>
+          <td>{{ratings[0]}}</td>
+        </tr>
+        <tr>
+          <td>2.</td>
+          <td>{{anime_name[1]}}</td>
+          <td>{{ratings[1]}}</td>
+        </tr>
+        <tr>
+          <td>3.</td>
+          <td>{{anime_name[2]}}</td>
+          <td>{{ratings[2]}}</td>
+        </tr>
+        <tr>
+          <td>4.</td>
+          <td>{{anime_name[3]}}</td>
+          <td>{{ratings[3]}}</td>
+        </tr>
+
+        <tr>
+          <td>5.</td>
+          <td>{{anime_name[4]}}</td>
+          <td>{{ratings[4]}}</td>
+        </tr>
+        <tr>
+          <td>6.</td>
+          <td>{{anime_name[5]}}</td>
+          <td>{{ratings[5]}}</td>
+        </tr>
+        <tr>
+          <td>7.</td>
+          <td>{{anime_name[6]}}</td>
+          <td>{{ratings[6]}}</td>
+        </tr>
+        <tr>
+          <td>8.</td>
+          <td>{{anime_name[7]}}</td>
+          <td>{{ratings[7]}}</td>
+        </tr>
+        <tr>
+          <td>9.</td>
+          <td>{{anime_name[8]}}</td>
+          <td>{{ratings[8]}}</td>
+        </tr>
+        <tr>
+          <td>10.</td>
+          <td>{{anime_name[9]}}</td>
+          <td>{{ratings[9]}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
